@@ -1,0 +1,109 @@
+:root {
+  --S_yellow  : #b58900;
+  --S_orange  : #cb4b16;
+  --S_red     : #dc322f;
+  --S_magenta : #d33682;
+  --S_violet  : #6c71c4;
+  --S_blue    : #268bd2;
+  --S_cyan    : #2aa198;
+  --S_green   : #859900;
+
+  --S_base03  : #fdf6e3;
+  --S_base02  : #eee8d5;
+  --S_base01  : #93a1a1;
+  --S_base00  : #839496;
+  --S_base0   : #657b83;
+  --S_base1   : #586e75;
+  --S_base2   : #073642;
+  --S_base3   : #002b36;
+
+  --text-gray : #24292e;
+}
+
+/*
+@media (prefers-color-scheme : dark) {
+:root {
+  --S_base03  : #002b36;
+  --S_base02  : #073642;
+  --S_base01  : #586e75;
+  --S_base00  : #657b83;
+  --S_base0   : #839496;
+  --S_base1   : #93a1a1;
+  --S_base2   : #eee8d5;
+  --S_base3   : #fdf6e3;
+
+  --text-gray : #f6f8fa;
+}}
+*/
+
+html {
+  font : 1.5em/1.42 system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  -moz-text-size-adjust    : 100%;
+  -webkit-text-size-adjust : 100%;
+}
+
+body {
+  background : var(--S_base03);
+  color      : var(--S_base0);
+}
+
+a                 { color : var(--S_blue);   }
+h1,h2,h3,h4,h5,h6 { color : var(--S_red);    }
+header            { color : var(--S_orange); }
+td                { color : var(--S_yellow); }
+li                { color : var(--S_cyan);   }
+li > span         { color : var(--S_base0);  }
+
+a:hover         { text-decoration : underline; }
+body            { margin          : 0;         }
+img             { vertical-align  : bottom;    }
+td:nth-child(1) { text-align      : right;     }
+td:nth-child(2):before { content  : "\2002";   }
+
+a, dl, h1, h2, h3, h4, h5, h6, ol, p, td, ul {
+  font-style      : normal;
+  font-weight     : normal;
+  text-decoration : none;
+}
+
+main {
+  margin-left  : 5vw;
+  margin-right : 5vw;
+}
+
+#body-header {
+  background : crimson url("/logo.png") center/contain no-repeat;
+  height     : 350px;
+  position   : relative;
+}
+
+#body-header > h1 {
+  display : none;
+}
+
+#body-header > a {
+  height   : 100%;
+  position : absolute;
+      left : 0;
+      top  : 0;
+  width    : 100%;
+}
+
+#main-header {
+  display : flex;
+}
+
+#main-header > a {
+  flex-shrink : 0;
+  margin-top  : -100px;
+  z-index     : 0;
+}
+
+#main-header img {
+  border-radius : 50%;
+}
+
+#main-header * {
+  margin-bottom : auto;
+  margin-top    : auto;
+}
