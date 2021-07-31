@@ -108,20 +108,13 @@ main {
   margin-top    : auto;
 }
 
-i > span          { display : none;    }
-#discord          { color   : #7289da; }
-#discord:before   { content : "\f392"; }
-#facebook         { color   : #1877f2; }
-#facebook:before  { content : "\f09a"; }
-#github           { color   : var(--text-gray); }
-#github:before    { content : "\f09b"; }
-#instagram        { color   : #e4405f; }
-#instagram:before { content : "\f16d"; }
-#line             { color   : #00b900; }
-#line:before      { content : "\f3c0"; }
-#mail             { color   : #d14836; }
-#mail:before      { content : "\f0e0"; }
-#mobile           { color   : var(--text-gray); }
-#mobile:before    { content : "\f3cd"; }
-#twitter          { color   : #1da1f2; }
-#twitter:before   { content : "\f099"; }
+i > span   { display : none;    }
+#discord   { color   : #7289da; }
+#facebook  { color   : #1877f2; }
+#github    { color   : var(--text-gray); }
+#instagram { color   : #e4405f; }
+#line      { color   : #00b900; }
+#mail      { color   : #d14836; }
+#mobile    { color   : var(--text-gray); }
+#spotify   { color   : #1db954; }
+#twitter   { color   : #1da1f2; }
